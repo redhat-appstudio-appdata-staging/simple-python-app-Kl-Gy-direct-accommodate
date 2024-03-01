@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: simple-python-app
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads-stage/cqi-tenant/simple-python-app/simple-python-app@sha256:5c29fa4eb3d181ca7844df1d33f7286c7f136b10bbd73bef300ab643e98efef7
         name: my-python
         ports:
         - containerPort: 8081
