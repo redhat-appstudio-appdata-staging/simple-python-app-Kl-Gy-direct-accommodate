@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-python-app
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/cqi-tenant/simple-python-app/simple-python-app@sha256:5c29fa4eb3d181ca7844df1d33f7286c7f136b10bbd73bef300ab643e98efef7
+        name: my-python
+        resources: {}
+status: {}
